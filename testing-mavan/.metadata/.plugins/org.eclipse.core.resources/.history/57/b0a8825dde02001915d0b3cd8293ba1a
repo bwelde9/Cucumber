@@ -1,0 +1,14 @@
+package pages;
+
+
+
+public class homePage {
+	public homePage(WebDriver driver) {
+		PageFactory.initElements(driver,this);
+	}
+	
+	@FindBy(="")
+	public WebElement current;
+	
+
+}

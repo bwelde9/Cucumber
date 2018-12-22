@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="3" total="13" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="19379" started-at="2018-12-04T20:22:20Z" finished-at="2018-12-04T20:22:40Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="19379" started-at="2018-12-04T20:22:20Z" finished-at="2018-12-04T20:22:40Z">
+      <class name="testcases.AppSkipTest2">
+        <test-method status="PASS" signature="LoginTest()[pri:1, instance:testcases.AppSkipTest2@5b275dab]" name="LoginTest" duration-ms="0" started-at="2018-12-04T20:22:39Z" finished-at="2018-12-04T20:22:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+      </class> <!-- testcases.AppSkipTest2 -->
+      <class name="testcases.AppAssertions">
+        <test-method status="FAIL" signature="RegisterTest()[pri:0, instance:testcases.AppAssertions@5e5792a0]" name="RegisterTest" duration-ms="8" started-at="2018-12-04T20:22:26Z" finished-at="2018-12-04T20:22:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [yahoo] but found [yahoo1],
+expected [c] but found [a],
+expected [b] but found [a]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [yahoo] but found [yahoo1],
+expected [c] but found [a],
+expected [b] but found [a]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at testcases.AppAssertions.RegisterTest(AppAssertions.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterTest -->
+      </class> <!-- testcases.AppAssertions -->
+      <class name="testcases.App">
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:testcases.App@3ffc5af1]" name="LoginTest" duration-ms="6" started-at="2018-12-04T20:22:26Z" finished-at="2018-12-04T20:22:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="LogoutTest()[pri:0, instance:testcases.App@3ffc5af1]" name="LogoutTest" duration-ms="1" started-at="2018-12-04T20:22:26Z" finished-at="2018-12-04T20:22:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTest -->
+        <test-method status="PASS" signature="PasswordChange()[pri:0, instance:testcases.App@3ffc5af1]" name="PasswordChange" duration-ms="1" started-at="2018-12-04T20:22:26Z" finished-at="2018-12-04T20:22:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PasswordChange -->
+      </class> <!-- testcases.App -->
+      <class name="testcases.Task2">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testcases.Task2@29774679]" name="openBrowser" is-config="true" duration-ms="5816" started-at="2018-12-04T20:22:20Z" finished-at="2018-12-04T20:22:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="logintest(java.lang.String, java.lang.String)[pri:0, instance:testcases.Task2@29774679]" name="logintest" duration-ms="6264" started-at="2018-12-04T20:22:26Z" data-provider="getdata" finished-at="2018-12-04T20:22:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tutorial]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tutorial]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="FAIL" signature="logintest(java.lang.String, java.lang.String)[pri:0, instance:testcases.Task2@29774679]" name="logintest" duration-ms="6568" started-at="2018-12-04T20:22:32Z" data-provider="getdata" finished-at="2018-12-04T20:22:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"passCount"}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-OG7HI8GS', ip: '10.1.10.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\binni\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57873}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: c336ebaacc5310193afd5f82ca974542
+*** Element info: {Using=name, value=passCount}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"passCount"}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-OG7HI8GS', ip: '10.1.10.223', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.44.609538 (b655c5a60b0b54..., userDataDir: C:\Users\binni\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57873}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: c336ebaacc5310193afd5f82ca974542
+*** Element info: {Using=name, value=passCount}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at testcases.Task2.isElementPresent(Task2.java:84)
+at testcases.Task2.logintest(Task2.java:57)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.Task2@29774679]" name="closeBrowser" is-config="true" duration-ms="671" started-at="2018-12-04T20:22:39Z" finished-at="2018-12-04T20:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.Task2 -->
+      <class name="testcases.AppDataProvider">
+        <test-method status="PASS" signature="logintest2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AppDataProvider@26653222]" name="logintest2" duration-ms="1" started-at="2018-12-04T20:22:26Z" data-provider="getdata2" finished-at="2018-12-04T20:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[phone1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[browser1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest2 -->
+        <test-method status="PASS" signature="logintest2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AppDataProvider@26653222]" name="logintest2" duration-ms="1" started-at="2018-12-04T20:22:26Z" data-provider="getdata2" finished-at="2018-12-04T20:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[phone2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[browser2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest2 -->
+        <test-method status="PASS" signature="logintest2(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.AppDataProvider@26653222]" name="logintest2" duration-ms="1" started-at="2018-12-04T20:22:26Z" data-provider="getdata2" finished-at="2018-12-04T20:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[phone3]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[browser3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest2 -->
+      </class> <!-- testcases.AppDataProvider -->
+      <class name="testcases.AppSkipTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.AppSkipTest@523884b2]" name="beforeTest" is-config="true" duration-ms="9" started-at="2018-12-04T20:22:20Z" finished-at="2018-12-04T20:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.AppSkipTest2@5b275dab]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-12-04T20:22:20Z" finished-at="2018-12-04T20:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeSuit()[pri:0, instance:testcases.Task@61832929]" name="beforeSuit" is-config="true" duration-ms="0" started-at="2018-12-04T20:22:20Z" finished-at="2018-12-04T20:22:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuit -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:testcases.AppSkipTest@523884b2]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-12-04T20:22:40Z" finished-at="2018-12-04T20:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:testcases.AppSkipTest2@5b275dab]" name="AfterTest" is-config="true" duration-ms="0" started-at="2018-12-04T20:22:40Z" finished-at="2018-12-04T20:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+        <test-method status="PASS" signature="afterSuit()[pri:0, instance:testcases.Task@61832929]" name="afterSuit" is-config="true" duration-ms="0" started-at="2018-12-04T20:22:40Z" finished-at="2018-12-04T20:22:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuit -->
+      </class> <!-- testcases.AppSkipTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

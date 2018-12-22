@@ -1,0 +1,67 @@
+package pomDesign;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.homePage;
+
+
+public class culculatorLoginTest {
+	
+WebDriver driver;
+	
+	@BeforeTest
+	public void setUp() {
+
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+
+		driver.get("https://www.calculator.net/gas-mileage-calculator.html");
+		
+	}
+	
+	@AfterTest
+	public void closeUp() {
+
+		driver.close();
+		driver.quit();
+
+}
+	@Test
+	public void login() {
+		homePage loginPage = new homePage(driver);
+		
+		loginPage.current.clear();
+		loginPage.current.sendKeys("12360");
+		loginPage.previous.clear();
+		loginPage.previous.sendKeys("12000");
+		loginPage.gasAdded.clear();
+		loginPage.gasAdded.sendKeys("15");
+		loginPage.gasPrice.clear();
+		loginPage.gasPrice.sendKeys("3");
+		loginPage.culculate.click();
+		
+		//Assert.assertTrue(loginPage.miles.contains("miles per gallon"));
+	}
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="28012" started-at="2018-12-07T15:09:51Z" finished-at="2018-12-07T15:10:19Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="28012" started-at="2018-12-07T15:09:51Z" finished-at="2018-12-07T15:10:19Z">
+      <class name="cybertek2.CNNTest">
+        <test-method status="PASS" signature="navigatetocnn()[pri:0, instance:cybertek2.CNNTest@64616ca2]" name="navigatetocnn" duration-ms="3158" started-at="2018-12-07T15:10:16Z" finished-at="2018-12-07T15:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatetocnn -->
+      </class> <!-- cybertek2.CNNTest -->
+      <class name="cybertek2.ABCTest">
+        <test-method status="PASS" signature="navigatetoabc()[pri:0, instance:cybertek2.ABCTest@3b81a1bc]" name="navigatetoabc" duration-ms="6200" started-at="2018-12-07T15:10:09Z" finished-at="2018-12-07T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatetoabc -->
+      </class> <!-- cybertek2.ABCTest -->
+      <class name="cybertek.YahooTest">
+        <test-method status="PASS" signature="navigatetoyahoo()[pri:0, instance:cybertek.YahooTest@5f2050f6]" name="navigatetoyahoo" duration-ms="8987" started-at="2018-12-07T15:10:00Z" finished-at="2018-12-07T15:10:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatetoyahoo -->
+      </class> <!-- cybertek.YahooTest -->
+      <class name="cybertek.AmazonTest">
+        <test-method status="PASS" signature="navigatetoamazon()[pri:0, instance:cybertek.AmazonTest@26ba2a48]" name="navigatetoamazon" duration-ms="9639" started-at="2018-12-07T15:09:51Z" finished-at="2018-12-07T15:10:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatetoamazon -->
+      </class> <!-- cybertek.AmazonTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

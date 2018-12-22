@@ -1,0 +1,44 @@
+package googleTest;
+
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+
+	public class GoogleTest {
+		
+		WebDriver driver;
+		
+		@Before
+		public void setup() {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			driver.get("http://google.com");
+		}
+		
+		@Test
+		public void googleTitle() {
+			String title = "Google";
+			Assert.assertEquals(title, driver.getTitle());
+		}
+		
+		@Test
+		public void googleSearchTitle() {
+			driver.findElement(By.name("q")).sendKeys("apple" + Keys.ENTER);
+			String title = driver.getTitle();
+			Assert.assertTrue(title.contains("apple"));
+		}
+		
+		@After
+		public void finalize() {
+			System.out.println("Closing browser");
+			driver.quit();
+		}
+	}
+
